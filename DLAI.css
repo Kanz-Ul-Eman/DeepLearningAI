@@ -3,7 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-  border: border-box;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 .first {
   margin-bottom: 0.85rem;
@@ -43,9 +43,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .sec1-img {
-  max-width: 30rem;
+  max-width: 30%;
 }
 .sec1-img img {
+  max-width: 28rem;
   width: 100%;
   object-fit: contain;
 }
@@ -126,6 +127,9 @@ body {
 .card-content ul {
   padding-right: 30px;
 }
+.list-with-heading ul {
+  margin-left: 1rem;
+}
 
 .icon {
   color: #d6434f;
@@ -180,8 +184,8 @@ body {
 /* section 3 */
 
 .section3 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin: 0px 210px 28px 210px;
   display: flex;
   justify-content: space-between;
@@ -200,8 +204,6 @@ body {
   width: 70%;
   margin: 0 auto;
   border-radius: 10px;
-  margin-bottom: 28px;
-  height: 170px;
 }
 .section3-right {
   max-width: 42rem;
@@ -316,13 +318,13 @@ body {
 }
 
 .social-media {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
 .social-media a {
   color: white;
   font-size: 20px;
-  margin: 0 10px;
+  margin: 0 5px;
   text-decoration: none;
 }
