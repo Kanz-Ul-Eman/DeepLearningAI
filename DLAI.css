@@ -328,3 +328,65 @@ body {
   margin: 0 5px;
   text-decoration: none;
 }
+
+/* Media Query for 1024px */
+@media (max-width: 1024px) {
+  .icon-with-text {
+    flex-direction: column;
+    gap: 0.05rem;
+  }
+  .sec1-pg {
+    text-align: center;
+  }
+  .sec1-img,
+  .section3-img img {
+    display: none;
+  }
+  .sec1-right {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .section3,
+  .section1 {
+    justify-content: center;
+  }
+  .section3-right {
+    padding-left: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .button-1 {
+    margin: 0;
+  }
+  .button-2 {
+    margin-left: 20px;
+  }
+}
+
+/* Media Query for 768px */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .button {
+    justify-content: center;
+  }
+}
+
+/* Media Query for 468px */
+@media (max-width: 468px) {
+  .button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
