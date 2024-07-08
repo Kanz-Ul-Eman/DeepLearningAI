@@ -52,12 +52,13 @@ body {
 }
 
 /* section 2 */
-
+.sections {
+  background-color: #f9f9f9;
+}
 .section2 {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #f9f9f9;
   transition: transform 0.7Ss ease;
   margin-bottom: 7rem;
 }
@@ -93,9 +94,11 @@ body {
 }
 
 .img-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   background-color: #f0f0f0;
 }
@@ -106,11 +109,15 @@ body {
 }
 
 .img-text {
+  position: absolute;
   text-align: left;
   margin-top: 10px;
   backdrop-filter: blur(5px);
+  padding-bottom: 0.5rem;
+  bottom: 0;
 }
 .img-text p {
+  font-size: small;
   color: gray;
   margin: 0;
   font-weight: bold;
@@ -214,10 +221,9 @@ body {
 }
 .title {
   font-size: 2.25rem;
-  line-height: 3rem;
   line-height: 2.5rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.01rem;
 }
 .uppercase {
   text-transform: uppercase;
@@ -298,16 +304,19 @@ body {
 }
 
 .footer-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+.footer-links {
+  padding: 2rem;
+}
 .footer-links a {
-  margin-top: 35px;
   color: #ff5c5c;
   margin: 0 10px;
   text-decoration: none;
@@ -315,11 +324,6 @@ body {
 
 .footer-links a:hover {
   text-decoration: underline;
-}
-
-.social-media {
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .social-media a {
@@ -356,14 +360,19 @@ body {
     justify-content: center;
   }
   .section3-right {
-    padding-left: 5rem;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    padding-left: 9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+  .section3-right p,
+  .section3-right h2,
+  .section3-right span,
+  .section3-right button {
+    text-align: center;
+  }
+
   .button-1 {
     margin: 0;
   }
